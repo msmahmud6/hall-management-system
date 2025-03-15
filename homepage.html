@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KiU Hall Management System</title>
+  <link rel="stylesheet" href="homepage_style.css">
+  <script>
+    // Load external HTML file into the page
+    function loadHTML(elementId, filePath) {
+        fetch(filePath)
+            .then(response => response.text())
+            .then(data => document.getElementById(elementId).innerHTML = data)
+            .catch(error => console.error('Error loading file:', error));
+    }
+  </script>
+</head>
+<body>
+  <!--Header Starts Here-->
+  <div id="header"></div>
+  <!--Header Ends Here-->
+
+  <!--Hero Section Starts-->
+  <div class="container">
+  <section class="hero">
+    <div class="hero-content">
+      <img src="Designer4.jpeg" alt="Hero Image" class="hero-image">
+      <div class="text-overlay">
+        <h1>Your Hero Text Here</h1>
+        <p>Some description or CTA goes here</p>
+      </div>
+    </div>
+  </section> 
+</div> 
+  
+  <!--Hero Section Ends-->
+
+  <!--Objects Starts-->
+  <div class="container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col">Helolo</div>
+        <div class="col">Helo</div>
+        <div class="col">dsfjhj</div>
+      </div>
+    </div>
+    <!--Objects Ends-->
+  </div>
+  
+
+
+
+  <script>
+    loadHTML('header','header.html')
+  </script>
+  
+</body>
+</html>

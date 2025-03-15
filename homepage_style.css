@@ -1,0 +1,50 @@
+/* Hero Section Styling */
+.hero {
+    position: relative; /* Needed to position text on top of the image */
+    width: 100%;
+    height: 100vh; /* Full-screen height */
+    overflow: hidden; /* To avoid overflow from the image */
+  }
+  
+  /* Hero Image */
+  .hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; Ensures the image covers the entire section */
+    /* z-index: -1; Puts the image behind the text */
+  }
+  
+  /* Text Overlay */
+/* Text Overlay */
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    color: rgb(15, 1, 1); /* White text with 70% opacity */
+    text-align: right; /* Centers the text horizontally */
+    z-index: 0; /* Makes sure the text is above the image */
+    background: none;
+    padding-right: 20px;
+  }
+  
+  /* Optional: Add styles for the text */
+  .text-overlay h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    background: none;
+  }
+  
+  .text-overlay p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    background: none;
+  }
+
+.navbar-nav{
+    padding-left: 0 !important;
+}
+  
